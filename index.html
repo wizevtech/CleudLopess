@@ -2,28 +2,30 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Cleud Lopes - Música que fala com você</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome (já usado por você) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Link pro CSS separado -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Header e Navegação -->
-    <header>
-        <div class="container nav-container">
+    <!-- Header -->
+    <header id="site-header">
+        <div class="nav-container">
+            <a href="#home" class="logo">Cleud <span>Lopes</span></a>
 
-            <!-- Logo do cleud -->
-            <a href="#" class="logo">Cleud <span>Lopes</span></a>
-
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Abrir menu" role="button" tabindex="0">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
 
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu" role="menubar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#musicas">Músicas</a></li>
@@ -34,32 +36,35 @@
         </div>
     </header>
 
-    <!-- Home/Banner -->
-    <section id="home">
-        <div class="container banner-content">
-            <h1>Cleud Lopes</h1>
+    <!-- HERO -->
+    <section id="home" aria-label="Home">
+        <div class="banner-content container">
+            <h1><span>Cleud</span> Lopes</h1>
             <p>Música que fala com você</p>
-            <a href="#musicas" class="btn">Ouça Agora</a>
+            <a class="btn" href="#musicas">Ouça Agora</a>
 
-            <div class="shows-container">
-                <h3>Próximos Shows</h3>
+            <div class="shows-container" aria-hidden="false">
                 <div class="show-card">
                     <h4>30/12/2023 - 22:00</h4>
-                    <p> A adicionar - MG</p>
+                    <p>A adicionar - MG</p>
                 </div>
+
                 <div class="show-card">
                     <h4>15/01/2024 - 20:00</h4>
-                    <p> A adicionar - MG</p>
+                    <p>A adicionar - MG</p>
                 </div>
+
                 <div class="show-card">
                     <h4>10/02/2024 - 16:00</h4>
-                    <p> A adicionar - MG</p>
+                    <p>A adicionar - MG</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- SOBRE -->
     <section id="sobre">
         <div class="container">
             <div class="section-title">
@@ -68,72 +73,78 @@
 
             <div class="sobre-content">
                 <div class="sobre-img">
-                    <img src="cleud_02.jpg" alt="Cleud Lopes">
+                    <img src="cleud_02.jpg" alt="Cleud Lopes" />
                 </div>
 
                 <div class="sobre-text">
-                    <h3>História de Cleud Lopes</h3>
-                    <p>Cleud Lopes é um cantor e compositor mineiro que nasceu com o dom da música. Desde criança, demonstrava grande interesse por instrumentos musicais e começou a tocar violão aos 10 anos de idade. Sua paixão pela música sertaneja e pelo
-                        forró pé-de-serra o acompanhou durante toda a vida.</p>
-                    <p>Natural de Montes Claros, no norte de Minas Gerais, Cleud começou sua carreira artística participando de festivais locais e se apresentando em bares da região. Seu talento logo chamou a atenção e ele passou a ser convidado para shows
-                        em diversas cidades do interior mineiro e baiano.</p>
-                    <p>Com uma voz marcante e emocionante, Cleud Lopes conquistou seu espaço no cenário musical regional. Seu repertório mistura o autêntico forró pé-de-serra com influências sertanejas, criando um estilo único que cativa o público.</p>
-                    <p>Em 2015, lançou seu primeiro CD independente, que incluía sucessos como "Lamento" e "Menina Linda". Seu trabalho autoral reflete as experiências de vida, amores, desilusões e as alegrias do povo do interior.</p>
-                    <p>Atualmente, Cleud Lopes segue se apresentando por todo o Brasil, levando sua música que fala diretamente com o coração das pessoas. Sua simplicidade e carisma no paleario conquistam fãs em todas as regiões por onde passa.</p>
-                    <p>Com planos de lançar seu primeiro DVD em breve, Cleud Lopes continua firmemente trilhando seu caminho na música, sempre fiel às suas raízes e à essência que o tornou um artista querido pelo público.</p>
+                    <h3>História de <span>Cleud</span> Lopes</h3>
+                    <p>
+                        Cleud Lopes é um cantor e compositor mineiro ... (texto resumido)
+                    </p>
+                    <p>
+                        Atualmente, Cleud segue se apresentando por todo o Brasil, levando sua música que fala diretamente com o coração das pessoas.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- MUSICAS -->
     <section id="musicas">
-        <h2 style="text-align: center; color: #ffd814;">Músicas</h2>
-
-        <!-- Player 1 -->
-        <div class="spotify-player">
-            <img src="cleud_show1.jpg" alt="Capa do álbum" class="album-cover">
-
-            <div class="player-info">
-                <h4>Desencontro</h4>
-                <p>Cleud Lopes</p>
-
-                <input type="range" class="progress-bar" value="0" max="100">
-                <div class="controls">
-                    <button class="play-btn"><i class="fas fa-play"></i></button>
-                </div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Músicas</h2>
             </div>
 
-            <!-- Áudio ligado a este player -->
-            <audio preload="metadata">
-            <source src="desencontro.mp3" type="audio/mpeg">
-        </audio>
-        </div>
+            <div class="spotify-player" aria-label="Player 1">
+                <img src="cleud_show1.jpg" alt="Capa do álbum" class="album-cover" />
 
-        <!-- Player 2 -->
-        <div class="spotify-player">
-            <img src="cleud_show2.jpg" alt="Capa do álbum" class="album-cover">
+                <div class="player-info">
+                    <h4>Desencontro</h4>
+                    <p>Cleud Lopes</p>
 
-            <div class="player-info">
-                <h4>A lua e ela</h4>
-                <p>Cleud Lopes</p>
+                    <input type="range" class="progress-bar" value="0" max="100" aria-label="Barra de progresso" />
 
-                <input type="range" class="progress-bar" value="0" max="100">
-                <div class="controls">
-                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <div class="controls">
+                        <button class="play-btn" data-audio="desencontro.mp3">
+                <i class="fas fa-play"></i>
+              </button>
+                    </div>
                 </div>
+
+                <audio preload="metadata" id="audio-1">
+            <source src="desencontro.mp3" type="audio/mpeg" />
+          </audio>
             </div>
 
-            <!-- Áudio ligado a este player -->
-            <audio preload="metadata">
-            <source src="a_lua_e_ela.mp3" type="audio/mpeg">
-        </audio>
+            <div class="spotify-player" aria-label="Player 2">
+                <img src="cleud_show2.jpg" alt="Capa do álbum" class="album-cover" />
+
+                <div class="player-info">
+                    <h4>A lua e ela</h4>
+                    <p>Cleud Lopes</p>
+
+                    <input type="range" class="progress-bar" value="0" max="100" aria-label="Barra de progresso" />
+
+                    <div class="controls">
+                        <button class="play-btn" data-audio="a_lua_e_ela.mp3">
+                <i class="fas fa-play"></i>
+              </button>
+                    </div>
+                </div>
+
+                <audio preload="metadata" id="audio-2">
+            <source src="a_lua_e_ela.mp3" type="audio/mpeg" />
+          </audio>
+            </div>
         </div>
     </section>
 
+    <div class="section-divider" aria-hidden="true"></div>
 
-
-
-    <!-- Fotos -->
+    <!-- FOTOS -->
     <section id="fotos">
         <div class="container">
             <div class="section-title">
@@ -142,38 +153,39 @@
 
             <div class="galeria-grid">
                 <div class="galeria-item">
-                    <img src="cleud_show1.jpg" alt="Show Cleud Lopes">
+                    <img src="cleud_show1.jpg" alt="Show Cleud Lopes" />
                     <div class="galeria-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
 
                 <div class="galeria-item">
-                    <img src="cleud_show2.jpg" alt="Show Cleud Lopes">
+                    <img src="cleud_show2.jpg" alt="Show Cleud Lopes" />
                     <div class="galeria-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
 
                 <div class="galeria-item">
-                    <img src="cleud_show3.jpg" alt="Show Cleud Lopes">
+                    <img src="cleud_show3.jpg" alt="Show Cleud Lopes" />
                     <div class="galeria-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
 
                 <div class="galeria-item">
-                    <img src="cleud_03.jpg" alt="Cleud Lopes no Estúdio">
+                    <img src="cleud_03.jpg" alt="Cleud no estúdio" />
                     <div class="galeria-overlay">
                         <i class="fas fa-search-plus"></i>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Agenda -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- AGENDA -->
     <section id="agenda">
         <div class="container">
             <div class="section-title">
@@ -186,10 +198,10 @@
                         <h3>30 DEZ</h3>
                         <p>2023 | 22:00</p>
                     </div>
+
                     <div class="agenda-info">
                         <h4>Forró da Palma</h4>
                         <p>Várzea da Palma/MG</p>
-                        <p>Praça de eventos</p>
                     </div>
                 </div>
 
@@ -198,10 +210,10 @@
                         <h3>15 JAN</h3>
                         <p>2024 | 20:00</p>
                     </div>
+
                     <div class="agenda-info">
                         <h4>Forró da Palma</h4>
                         <p>Várzea da Palma/MG</p>
-                        <p>Praça de eventos</p>
                     </div>
                 </div>
 
@@ -210,17 +222,19 @@
                         <h3>10 FEV</h3>
                         <p>2024 | 16:00</p>
                     </div>
+
                     <div class="agenda-info">
                         <h4>Forró da Palma</h4>
                         <p>Várzea da Palma/MG</p>
-                        <p>Praça de eventos</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contato -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- CONTATO -->
     <section id="contato">
         <div class="container">
             <div class="section-title">
@@ -230,15 +244,23 @@
             <div class="contato-container">
                 <div class="contato-info">
                     <h3>Entre em Contato</h3>
-                    <p>Para contratações, shows ou qualquer outra informação, preencha o formulário ao lado ou utilize um dos canais abaixo:</p>
+
+                    <p>
+                        Para contratações, shows ou qualquer outra informação, preencha o formulário ao lado ou utilize um dos canais abaixo:
+                    </p>
+
                     <p><i class="fas fa-envelope"></i> contato@cleudlopes.com.br</p>
                     <p><i class="fas fa-phone"></i> (38) 99999-9999</p>
 
                     <div class="redes-sociais">
-                        <a href="#" class="rede-social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="rede-social"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="rede-social"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="rede-social"><i class="fab fa-spotify"></i></a>
+                        <a href="#" class="rede-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i
+              ></a>
+                        <a href="#" class="rede-social" aria-label="Instagram"><i class="fab fa-instagram"></i
+              ></a>
+                        <a href="#" class="rede-social" aria-label="YouTube"><i class="fab fa-youtube"></i
+              ></a>
+                        <a href="#" class="rede-social" aria-label="Spotify"><i class="fab fa-spotify"></i
+              ></a>
                     </div>
                 </div>
 
@@ -246,12 +268,12 @@
                     <form id="form-contato">
                         <div class="form-group">
                             <label for="nome">Nome</label>
-                            <input type="text" id="nome" class="form-control" required>
+                            <input id="nome" class="form-control" required />
                         </div>
 
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" class="form-control" required>
+                            <input id="email" type="email" class="form-control" required />
                         </div>
 
                         <div class="form-group">
@@ -269,7 +291,9 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-logo">Cleud Lopes</div>
+            <div class="footer-logo">
+                <img src="logo.png" alt="Cleud Lopes" class="footer-logo-img" />
+            </div>
 
             <nav class="footer-nav">
                 <ul>
@@ -286,16 +310,20 @@
         </div>
     </footer>
 
-    <!-- Modal para Fotos -->
-    <div class="modal" id="modal-foto">
+    <!-- Modal de foto -->
+    <div class="modal" id="modal-foto" role="dialog" aria-hidden="true">
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <img src="" alt="Foto ampliada">
-        </div>
+            <span class="close-modal" style="position:absolute;top:-44px;right:0;color:#fff;font-size:32px;cursor:pointer;">&times;</span
+        >
+        <img
+          src=""
+          alt="Foto ampliada"
+          style="max-width:100%;border-radius:8px;display:block"
+        />
+      </div>
     </div>
+
+    <!-- Script externo separado -->
     <script src="script.js"></script>
-</body>
-
-
-
+  </body>
 </html>
