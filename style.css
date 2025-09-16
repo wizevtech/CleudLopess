@@ -223,7 +223,7 @@ header.scrolled {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    background: url('fotott.png') center center / cover no-repeat;
+    background: url('cleud.png') center center / cover no-repeat;
 }
 
 
@@ -588,3 +588,4 @@ footer {
         height: 200px;
     }
 }
+
